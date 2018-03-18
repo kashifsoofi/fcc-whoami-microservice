@@ -3,4 +3,4 @@ This is Request Header Parser microservice for Free Code Camp that will report v
 
 Problem statement and use case can be found at https://www.freecodecamp.com/challenges/request-header-parser-microservice
 
-Results can be viewed at https://fcc-whoami-ks.herokuapp.com//api/whoami
+Results can be viewed at https://fcc-whoami-service-ks.glitch.me/

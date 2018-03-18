@@ -1,5 +1,16 @@
-var express = require("express");
-var app = express();
+const express = require("express");
+const path = require("path");
+const app = express();
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
+app.get('/', function (req, res) {
+    //res.sendFile('index.html');
+    var appUrl = req.protocol + '://' + req.get('host') + '/';
+    res.render('index', { appUrl: appUrl });
+});
 
 app.get('/api/whoami', function (req, res) {
     var ipaddress  = req.headers['x-forward-for'] || req.connection.remoteAddress;

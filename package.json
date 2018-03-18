@@ -4,6 +4,7 @@
   "description": "whoami microservice",
   "main": "server.js",
   "dependencies": {
+    "ejs": "^2.5.1",
     "express": "^4.14.0"
   },
   "devDependencies": {},
